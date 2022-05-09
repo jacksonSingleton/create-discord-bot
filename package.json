@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "description": "Scaffold platform for creating a Bot with Discord.JS",
   "main": "src/index.js",
+  "bin": {
+    "create-discord-bot": "src/index.js"
+  },
   "scripts": {
-    "test": "test"
+    "start": "node src/index.js",
+    "create-discord-bot": "node src/index.js"
   },
   "author": "Jackson Singleton",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "prompts": "^2.4.2"
   }
 }
